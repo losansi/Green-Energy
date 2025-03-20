@@ -1,0 +1,285 @@
+Styles.css
+/*
+ * File Name:	styles.css 
+ * Description:	This is the CSS code for the home page for Green Energy webpage.
+ */
+
+/* CSS Reset */
+body, header, nav, main, footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header Styles */
+header {
+	display: flex;
+	justify-content: center;
+}
+
+header h1 {
+	font-size: 5em;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+}
+
+header img {
+	/* Allows space at the top of the image */
+	margin-top: 1%; 
+	/* Allows space at the left of the image */
+	margin-left: 20px;
+	/* Makes the image a circle */
+	border-radius: 50%;
+}
+
+header img, h1 {
+	margin: 1%; /* Evens out the image and text */
+}
+
+/* Navigation Bar */
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	color: #000000;
+	font-size: 1em;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+}
+
+/* Mouse over text */
+nav a:hover {
+	background-color: rgb(203, 203, 234);
+	color: white;
+}
+
+/* Visited links */
+nav a:visited {
+	color: purple;
+}
+
+nav li a {
+	display: block;
+	padding: 1.5em 2em; /* Gives some space inbetween the text */
+	text-decoration: none; /* Removes underline from text */
+	font-size: 1.5em;
+}
+body{
+	padding-bottom: 50px;
+	position: relative;
+}
+
+/* General Container */
+.container {
+    display: flex;
+}
+
+/* Text Content Beside the Image */
+.text-content {
+    flex: 1; /* Ensures the text takes up the remaining space */
+    text-align: left;
+    margin: 20px; /* Remove any additional margins */
+    max-width: 100%; 
+    padding: 0; /* Remove any additional padding */
+}
+
+.content {
+    font-size: 1.3em; /* Adjust font size for better readability */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+.container {
+    display: flex;
+    margin: 25px;
+	padding: 0; /* Remove any additional padding */
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Make the image responsive */
+    border: 4px solid black; /* Add border for better visibility */
+    border-radius: 5px; /* Optional: round the corners slightly */
+}
+
+/* Content Below the Image */
+.content-below-image {
+    font-size: 1.3em; /* Adjust font size for readability */
+    text-align: left;
+	margin-left: 20px; /* Adds some space to the right */
+    margin-right: 20px; /* Adds some space to the right */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks the content vertically on smaller screens */
+        align-items: center; /* Centers the items */
+    }
+
+    .image-container {
+        margin-right: 0; /* Removes the side margin for better alignment */
+        text-align: left; /* Centers the image */
+    }
+
+    .text-content {
+        text-align: left; /* Aligns text for readability */
+        margin-top: 10px; /* Adds some spacing */
+    }
+
+    .content-below-image {
+        margin-top: 20px;
+        text-align: justify; /* Aligns text for readability */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        font-size: 1.1em; /* Slightly smaller text for very small screens */
+    }
+
+    .content-below-image {
+        font-size: 1.1em; /* Matches text size to main content */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Start of viewport for more information page. */
+
+/* Style rules for form main content. */
+.mainform
+	{
+		text-align: center;
+	}
+
+/* Style rules for form container. */
+.formcontainer
+	{
+		padding-bottom: 20px;
+	}
+
+/* Style rules for form. */
+.form
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center; /* Center text within form items if needed */
+		font-weight: 700;
+		font-size: large;
+	}
+.form input,
+.form select,
+.form button 
+	{
+		margin: 5px; /* Add margin between form elements if desired */
+		padding: 10px; /* Add padding to form elements for better appearance */
+	}
+.custom-box 
+	{
+		width: 200px; /* Set the width of the box */
+		height: 620px; /* Set the height of the box */
+		background-color:  #000000; /* Set the background color */
+		border: 2px solid #000000; /* Set the border width, style, and color */
+		border-radius: 8px; /* Add rounded corners to the box */
+		padding: 20px; /* Add padding inside the box */
+		margin: 20px; /* Add margin around the box */
+		box-sizing: border-box; /* Include padding and border in the box dimensions */
+		color: #ffffff; /* Set text color */
+		text-align: center; /* Center text horizontally */
+		margin: 0 auto;
+		line-height: 1.5; /* Set line height for better vertical alignment */
+		box-shadow: 4px 4px 8px #000000;
+	}
+.box-container
+	{
+		padding-bottom: 20px;
+	}
+
+/* End of viewport for more information page. */
+
+/* Start of viewport for power sources page. */
+
+/*  Style rules for mainslide. */
+.mainslide
+	{
+		text-align: center;
+	}
+
+/* Style rules for slideshow. */
+.slide-container 
+	{
+		max-width: 800px;
+		position: relative;
+		margin: auto;
+		padding-bottom: 20px;
+	}
+.slide 
+	{
+		display: none;
+		width: 100%;
+		height: auto;
+	}
+.slide img 
+	{
+		width: 100%;
+		height: auto;
+		border: 5px solid #000;
+		box-shadow: 4px 4px 8px #000;
+	}
+
+#slide1:checked ~ #slide_1,
+#slide2:checked ~ #slide_2,
+#slide3:checked ~ #slide_3 
+	{
+		display: block;
+	}
+input[type="radio"] 
+	{
+		display: inline;
+    	width: 20px;
+    	height: 20px;
+    	background-color: #000000;
+    	border-radius: 50%;
+		appearance: none;
+	}
+input[type="radio"]:checked 
+	{
+    	box-shadow: 0 0 5px #000000;
+	}
+
+/* End of viewport for power sources page. */
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+/* Clear Floats */
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}

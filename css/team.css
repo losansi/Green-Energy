@@ -1,0 +1,41 @@
+/*
+File Name: styles.css
+Names: Lorena Santos, Timothy Sicardo, Coutney Ingersoll
+Course: COP 2822C at Valencia College
+Professor: David Stendel
+Description: Web group project - Green energy
+Date: 3/15/24
+*/
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Main container style */
+main .lo img,
+main .ti img,
+main .co img {
+    float: left; 
+    margin-right: 20px; /* Create some space between image and text */
+    margin-left: 80px;
+    border: 2px solid #000;
+}
+
+/* Style for content divs */
+.lo .content,
+.ti .content,
+.co .content {
+    overflow: hidden; /* This is to contain floated image */
+}
+
+/* Clear floating elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
