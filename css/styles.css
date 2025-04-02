@@ -88,35 +88,27 @@ body{
 .text-content {
     flex: 1; /* Ensures the text takes up the remaining space */
     text-align: left;
-    margin: 20px; /* Remove any additional margins */
+    margin: 15px; /* Remove any additional margins */
     max-width: 100%; 
-    padding: 0; /* Remove any additional padding */
+    padding: 3; /* Remove any additional padding */
 }
 
 .content {
-    font-size: 1.3em; /* Adjust font size for better readability */
-    line-height: 1.5; /* Improve line spacing for readability */
+    font-size: 1.4em; /* Adjust font size for better readability */
+    line-height: 1.0; /* Improve line spacing for readability */
 }
 
 .container {
     display: flex;
-    margin: 25px;
-	padding: 0; /* Remove any additional padding */
+    margin: 20px;
+	padding: 10; /* Remove any additional padding */
 }
 
 img {
-    max-width: 100%;
+    max-width: 110%;
     height: auto; /* Make the image responsive */
-    border: 4px solid black; /* Add border for better visibility */
+    border: 2px solid black; /* Add border for better visibility */
     border-radius: 5px; /* Optional: round the corners slightly */
-}
-
-/* Content Below the Image */
-.content-below-image {
-    font-size: 1.3em; /* Adjust font size for readability */
-    text-align: left;
-	margin-left: 20px; /* Adds some space to the right */
-    margin-right: 20px; /* Adds some space to the right */
 }
 
 /* Responsive Styles */
